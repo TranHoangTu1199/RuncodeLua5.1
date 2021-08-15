@@ -1,0 +1,7 @@
+Dùng để chạy thử code Lua 5.1
+
+Cách sử dụng:
+B1: Open file.lua bằng lua5.1.exe
+B2: Chạy file run_code.cmd, nhập địa chỉ và tên file cần chạy
+
+Code by 草莓Cmy
