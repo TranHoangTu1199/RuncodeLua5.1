@@ -1,3 +1,4 @@
+::code by Cmy 草莓
 @echo off
 title Run code
 chcp 65001
@@ -9,10 +10,10 @@ set newtime=
 set timeout=
 set timeout_s=
 set timeout_ms=
-color f
 set /p tm=Nhập đường dẫn chứa file code: 
 cd %tm%
 set /p file=Nhập tên file code cần chạy: 
+set nf=%file%
 goto:run
 
 :run
@@ -27,5 +28,6 @@ set /A timeout_s=%timeout% / 100
 echo.
 echo ======================
 echo ~ Code runtime: %timeout_s%.%timeout_ms:~-0,2%s.
-pause >nul
+set /p nf=
+if not nf=='' set file=%nf%
 goto:run
